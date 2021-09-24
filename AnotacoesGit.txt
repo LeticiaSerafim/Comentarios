@@ -1,0 +1,24 @@
+BLOBS, TREES E COMMITS - Os três tipos básicos de objetos do GIT
+O comando git init cria um novo repositório do Git. Ele pode ser usado para converter um projeto existente e não versionado em um repositório do Git ou inicializar um novo repositório vazioO comando git init cria um novo repositório do Git. Ele pode ser usado para converter um projeto existente e não versionado em um repositório do Git ou inicializar um novo repositório vazio
+git add * - todos os arquivos modificados no commit
+git commit -m "commit inicial"
+Untracked - arquivos que o git ainda não conhece
+E Tracked os arquivos que o git conhece
+Staged - é onde ficam os arquivos que estão se preparando parafazer parte de um outro tipo de agrupamento
+git add * - arquivo untracked, moveu o arquivo untracked direto para o Staged
+Modified - Modifica o arquivo (compara o SHA1 dos arquivos)
+Os commits são as unidades estruturais de um cronograma de projeto Git. Podem ser considerados instantâneos ou marcos ao longo do cronograma de um projeto Git. São criados com o comando git commit para capturar o estado de um projeto naquele momento.
+Ambiente de desenvolvimento - Local repository, Staging Area, Working Directory - o que está na nossa máquina - quando faço um commit ele passa a integrar o repositório local - pode ser empurrado para um repositório remoto - transitando entre sating area e rowking directory - o commit movo os arquivos que estava na Staging area e otam eles em unmodified, populo o repositório local - tudo que está no repositório local tem que estar commitado - se não, não é possível mandar o arquivo para repositório remoto
+Servidor - Remote repository - no caso o github
+git status - vai ajudar a monitorar o status dos arquivos
+git branch dev - criei o branch dev
+git checkout dev - eu entrei no branch dev
+git pull origin dev - puxei as coisas que estão dentro do branch dev
+Ter costume de quando alterar para um branch, puxar tudo desse branch
+git pull origin main - puxando as coisas do branch main
+git push origin dev- estou mandando o branch dev para o git hub
+git status - eu to verificando as alterações do git
+git checkout main - entrando no branch main
+git merge dev - Puxando as alterações do dev pro main
+git push origin main - to mandando o branch main já alterado para o github
+git log - mostra todos os commits
